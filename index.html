@@ -1,14 +1,14 @@
 <h1>WARNING</h1>
 <p>This domain will soon no longer be in use. <b>Please stop using this url!</b></p>
 <p>Instead use and bookmark this site which is what this one redirects to: <a href="http://woomy-online.glitch.me">http://woomy-online.glitch.me</a></p>
-<button id="btn" disabled>Play Game (<span id="timer"></span>)</button>
+<button id="btn" disabled>Play Game (<span id="timer">10</span>)</button>
 <script>
   const time = document.getElementById("timer");
   const btn = document.getElementById("btn")
   
   let i = 10;
   const interval = setInterval(function(){
-    time = i--
+    time.innerHTML = i--
     if(i === 0){
       btn.onclick = function(){window.location.href="http://woomy-online.glitch.me"}
       btn.removeAttribute("disabled")
